@@ -1,0 +1,145 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 auto;
+  font-family: 'poiret one';
+  color: #758aa3; }
+  body header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+#numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+#login-body {
+  width: 60%;
+  text-align: center;
+  background-color: #322f2f; }
+  #login-body #numbers, #login-body #buttons {
+    width: 87%;
+    margin: 0 auto; }
+  #login-body header {
+    height: 100vh;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #login-body header .buttons button {
+      letter-spacing: 2px;
+      border: none;
+      background-color: transparent;
+      font-size: 28px;
+      font-family: 'pacifico';
+      color: #758aa3;
+      transition: .3s ease-out;
+      outline: none; }
+      #login-body header .buttons button:hover {
+        color: white;
+        cursor: pointer; }
+    #login-body header #center-context h1, #login-body header #center-context h3 {
+      letter-spacing: 2px; }
+    #login-body header #center-context h1 {
+      font-family: 'pacifico';
+      font-size: 50px;
+      text-shadow: 1px 1px white;
+      font-weight: 100; }
+    #login-body header #center-context h3 {
+      font-size: 24px;
+      margin: 10px 0 35px; }
+    #login-body header #center-context #numberLock {
+      width: 225px;
+      margin: 0 auto; }
+      #login-body header #center-context #numberLock #top {
+        height: 55px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        padding: 10px 0 0 25px; }
+      #login-body header #center-context #numberLock #screen {
+        letter-spacing: 20px;
+        font-size: 40px; }
+      #login-body header #center-context #numberLock #numbers .span {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 67px; }
+        #login-body header #center-context #numberLock #numbers .span span {
+          font-size: 30px;
+          border: 1px solid #758aa3;
+          border-radius: 50%;
+          height: 42px;
+          width: 47px;
+          padding-top: 5px;
+          transition: .3s ease-out; }
+          #login-body header #center-context #numberLock #numbers .span span:hover {
+            cursor: pointer;
+            border: 1px solid white;
+            box-shadow: 0 0 4px white;
+            color: white;
+            text-shadow: 0 0 3px white;
+            background-color: rgba(128, 128, 128, 0.2); }
+        #login-body header #center-context #numberLock #numbers .span #span-zero {
+          margin: 0 auto; }
+
+#body-home {
+  background-color: #FDF2EA;
+  color: #322f2f; }
+  #body-home header {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 97vw;
+    height: 100vh;
+    background-image: url(https://himecha.files.wordpress.com/2011/05/origin_coffeecup.jpg);
+    background-repeat: no-repeat;
+    background-size: 900px 600px;
+    background-position: top right;
+    margin-top: 20px; }
+    #body-home header div {
+      width: 80%;
+      margin: 0 auto; }
+      #body-home header div h1 {
+        font-size: 62px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        font-family: 'dancing script';
+        color: #432828; }
+      #body-home header div ul {
+        margin: 0;
+        width: 25%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end; }
+        #body-home header div ul li {
+          list-style: none;
+          margin: 8px 0; }
+          #body-home header div ul li a {
+            text-decoration: none;
+            font-family: 'poiret one';
+            font-weight: 900;
+            color: #432828;
+            letter-spacing: 1px; }
+  #body-home main .coffee {
+    height: 90vh; }
