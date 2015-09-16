@@ -1,12 +1,27 @@
 //login page
 
-
 var keys = document.getElementById("numbers");
 var displayScreen = document.querySelector("#screen");
 var span = document.getElementsByTagName("span");
 var screenBorder = document.getElementById("top");
 
+var numSpan = document.getElementsByClassName('numSpan');
+
 //limit 4 character count on screen
+for(var i = 0; i < numSpan.length; i++){
+  numSpan[i].addEventListener('click', function(event){
+      var length = 4;
+      displayScreen.innerHTML += event.target.textContent;
+      displayScreen.innerHTML = displayScreen.textContent.substring(0, length);
+      displayScreen.style.color = "white";
+      displayScreen.style.textShadow = "0 0 3px white";
+      screenBorder.style.border = "1px solid white";
+      screenBorder.style.boxShadow = "0 0 4px white";
+  });
+}
+
+/*
+limit 4 character count on screen
 keys.addEventListener("click", function(event){
   var length = 4;
   displayScreen.innerHTML += event.target.textContent;
@@ -16,7 +31,7 @@ keys.addEventListener("click", function(event){
   screenBorder.style.border = "1px solid white";
   screenBorder.style.boxShadow = "0 0 4px white";
 });
-
+*/
 
 //cancel button resets screen
 function refresh() {
